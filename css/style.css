@@ -53,6 +53,13 @@ header {
   z-index: 11;
 }
 
+.navbar-shrink {
+  background: var(--btn);
+  padding: 15px 0;
+  transition: 0.5s;
+}
+
+
 nav {
   display: flex;
   align-items: center;
@@ -653,6 +660,22 @@ nav {
 .join-btn:hover {
   transition: 2s;
   box-shadow: inset 220px 0 10px var(--black);
+}
+
+
+#backtop-id {
+  position: fixed;
+  bottom: 40px;
+  right: 40px ;
+  display: none;
+  padding: 10px;
+  border-radius: 45px;
+  background-color: var(--shadow);
+  box-shadow: 0 0 40px var(--btn);
+}
+
+.backtop {
+  display: inline-block !important;
 }
 
 
