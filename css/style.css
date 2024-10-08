@@ -23,7 +23,7 @@ body {
   --gold: #fac422;
   --black: #000000;
   --blue: #57b8ff;
-  --shadow: #999 ;
+  --shadow: #999;
   --goldbold: #fdd04a;
   --sponsor: #222730;
   --shop: #dfdfdfcc;
@@ -47,8 +47,8 @@ header {
   position: fixed;
   top: 0;
   background-image: linear-gradient(to right,
-  var(--black) 50%,
-  var(--blue) 50%);
+      var(--black) 50%,
+      var(--blue) 50%);
   width: 100%;
   z-index: 11;
 }
@@ -126,6 +126,145 @@ nav {
   color: var(--gold);
 }
 
+.dark header {
+  background-image: linear-gradient(to right,
+      var(--blue) 50%,
+      var(--black) 50%);
+}
+
+.dark .navbar-shrink {
+  background: var(--join);
+}
+
+.dark .hamburger {
+  color: var(--join);
+}
+
+.dark .nav-btn img:hover {
+  box-shadow: 0 0 30px var(--gold);
+}
+
+.dark .hero {
+  background-image: linear-gradient(to right,
+      var(--blue) 50%,
+      var(--black) 50%);
+}
+
+.dark .hero-main__future {
+  color: var(--gold);
+  text-shadow: 0 0 2px var(--join);
+}
+
+.dark .hero-main__title {
+  color: var(--sponsor);
+}
+
+.dark .hero-main__text {
+  color: var(--sponsor);
+}
+
+.dark .hero-button:hover {
+  background-color: var(--goldbold);
+}
+
+.dark .sponsar {
+  background-color: var(--card);
+}
+
+.dark .sponsar-title {
+  color: var(--goldbold);
+  text-shadow: 0 0 2px var(--jtext);
+}
+
+.dark .sponsar-text {
+  color: var(--goldbold);
+  text-shadow: 0 0 2px var(--blue);
+}
+
+.dark .sponsar-ais img {
+  border-radius: 25px;
+  box-shadow: 0 0 50px var(--goldbold), inset 15px 15px 0 var(--gold), inset -15px -15px 0 var(--gold);
+}
+
+.dark .shop-main__title {
+  color: var(--btn);
+}
+
+.dark .shop-main__text {
+  color: var(--btn);
+}
+
+.dark .shop-card {
+  background-color: var(--shop);
+  box-shadow: 0 0 20px var(--btn);
+}
+
+.dark .shop-card * {
+    color: var(--btn);
+}
+
+.dark .newera {
+  background-color: var(--shop);
+}
+
+.dark .newera-main__text {
+  color: var(--card);
+  text-shadow: 0 0 1px var(--btn);
+}
+
+.dark .newera-main__title {
+    color: var(--card);
+      text-shadow: 0 0 1px var(--btn);
+}
+
+.dark .newera-main .hero-button {
+  color: var(--card);
+    text-shadow: 0 0 1px var(--btn);
+}
+
+.dark .games-title {
+  color: var(--gold);
+}
+
+.dark .games-back svg {
+  fill: var(--gold);
+}
+
+.dark .articles {
+  background-color: var(--jtext);
+}
+
+.dark .articles-main__text {
+  color: var(--gold);
+}
+
+.dark .articles .hero-button {
+  color: var(--gold);
+}
+
+.dark .articles .hero-button:hover {
+  background-color: var(--blue);
+}
+
+.dark .articles-about__bigcard {
+  background-color: var(--shop);
+}
+
+.dark .articles-bigcard__text {
+  color: var(--join);
+}
+
+.dark .articles-bigcard__title {
+  color: var(--join);
+}
+
+.dark .articles-about__bigcard:hover {
+  box-shadow: 0 0 20px var(--gold)
+}
+
+.dark .articles-
+
+
 /* heder end  */
 
 /* hero start */
@@ -133,8 +272,8 @@ nav {
 .hero {
   padding: 190px 0 120px 0;
   background-image: linear-gradient(to right,
-  var(--black) 50%,
-  var(--blue) 50%);
+      var(--black) 50%,
+      var(--blue) 50%);
 }
 
 .hero-wrapper {
@@ -205,8 +344,8 @@ nav {
 }
 
 .hero-button {
-  padding: 21px 34px;
   color: var(--white);
+  padding: 21px 34px;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -290,7 +429,7 @@ nav {
 
 .shop {
   padding: 130px 0;
-  background : url("../images/shop_back.png")  no-repeat  ;
+  background: url("../images/shop_back.png") no-repeat;
   background-size: cover;
 }
 
@@ -318,7 +457,7 @@ nav {
 }
 
 .shop-main__text {
-  color: var(--shop) ;
+  color: var(--shop);
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -333,17 +472,17 @@ nav {
 
 .shop-card {
   position: relative;
-  padding: 35px 38.5px 35px 87.71px ;
+  padding: 35px 38.5px 35px 87.71px;
   border-radius: 20px;
   max-width: 637px;
-  background-color: var( --card);
+  background-color: var(--card);
 }
 
 .shop-card::before {
   position: absolute;
   top: 42px;
   left: 46px;
-  content: ""; 
+  content: "";
   width: 33px;
   height: 30px;
   display: inline-block;
@@ -363,7 +502,7 @@ nav {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  
+
 }
 
 
@@ -392,6 +531,11 @@ nav {
   height: 732px;
 }
 
+.games-back svg {
+  fill : var(--white);
+   
+}
+
 .games-back:nth-child(1) {
   background: url("../images/games_back1.png") no-repeat;
   background-size: cover;
@@ -407,7 +551,7 @@ nav {
   background-size: cover;
 }
 
-.games-title{
+.games-title {
   font-size: 48px;
   font-weight: 400;
   line-height: 58px;
@@ -458,7 +602,7 @@ nav {
   height: 550px;
   background: url("../images/newera_back.png") no-repeat;
   background-size: 492px 550px;
-  
+
 }
 
 
@@ -544,7 +688,7 @@ nav {
   border-radius: 40px;
   padding: 15px;
   transition: 0.4s;
-  
+
 }
 
 .articles-cards__card:hover {
@@ -607,7 +751,7 @@ nav {
   right: 0;
   bottom: -18px;
   content: "";
-  width: 434px; 
+  width: 434px;
   height: 16px;
   display: inline-block;
   background: url("../images/sponsor_line.svg") no-repeat;
@@ -634,7 +778,7 @@ nav {
   outline: none;
 }
 
-.join-input:focus  {
+.join-input:focus {
   box-shadow: 0 3px 2px var(--black);
 }
 
@@ -666,7 +810,7 @@ nav {
 #backtop-id {
   position: fixed;
   bottom: 40px;
-  right: 40px ;
+  right: 40px;
   display: none;
   padding: 10px;
   border-radius: 45px;
@@ -685,7 +829,7 @@ nav {
   .hero-main * {
     width: 70%;
   }
-  
+
   .sponsar-ais {
     flex-wrap: wrap;
     justify-content: center;
@@ -698,17 +842,17 @@ nav {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .articles-small__cards {
     max-width: 650px;
   }
-} 
+}
 
 @media (max-width: 1200px) {
   .newera-wrapper {
     justify-content: center;
   }
-  
+
   .newera-image {
     display: none;
   }
@@ -719,65 +863,65 @@ nav {
     max-width: 480px;
     padding: 0 20px;
   }
-  
+
   .games-back:nth-child(3) {
     display: none;
   }
 }
 
 @media (max-width: 950px) {
-  .hero{
+  .hero {
     background-image: none !important;
     background-color: var(--black) !important;
   }
-  
+
   .hero-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
-  
+
   .hero-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
+
 }
 
 @media (max-width: 900px) {
-  
-  
+
+
   nav {
     flex-direction: column;
   }
-  
+
   .nav-brand {
     width: 100%;
   }
-  
+
   .hamburger {
     display: flex !important;
   }
-  
+
   .nav-menu {
     display: none;
   }
-  
+
   .active {
     display: flex;
   }
-  
+
   .nav-btn {
     display: none;
   }
-  
+
   .activeBtn {
     display: flex;
   }
-  
-  
+
+
 }
 
 
@@ -787,15 +931,15 @@ nav {
     align-items: center;
     gap: 20px;
   }
-  
+
   .articles-main__text {
     text-align: center;
   }
-  
+
   .articles-main .hero-button {
     border: 3px solid var(--shadow);
   }
-  
+
 }
 
 @media (max-width: 810px) {
@@ -808,17 +952,17 @@ nav {
   .hero-main__title span:after {
     display: none;
   }
-  
+
   .hero-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .hero-button {
     border: 3px solid var(--shadow);
   }
-  
+
 }
 
 @media (max-width: 550px) {
@@ -828,47 +972,47 @@ nav {
     gap: 0;
     margin: 25px 0;
   }
-  
+
   .hero-main__title {
     font-size: 50px;
     font-weight: 400;
     line-height: 70px;
   }
-  
+
 }
 
 @media (max-width: 460px) {
-  
+
   .join-title {
     font-size: 52px;
     font-weight: 600;
     line-height: 62px;
   }
-  
+
   .join-title span::after {
     display: none;
   }
 
   .join-form {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 15px;
   }
-  
+
 }
 
 @media (max-width: 440px) {
   .sponsar-title::before {
     display: none;
   }
-  
+
   .shop-main__title {
     font-size: 44px;
     font-weight: 500;
     line-height: 54px;
   }
-  
-  
+
+
 }
 
 @media (max-width: 370px) {
@@ -876,17 +1020,17 @@ nav {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .hero-main__title {
     font-size: 35px;
     font-weight: 500;
     line-height: 65px;
   }
-  
+
   .shop-card {
     padding-left: 30px;
   }
-  
+
   .shop-card::before {
     display: none;
   }
