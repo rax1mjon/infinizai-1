@@ -278,6 +278,24 @@ nav {
   color: var(--join);
 }
 
+.dark .join-title {
+  color: var(--btn);
+}
+
+.dark .join-text {
+  color: var(--btn);
+  opacity: 0.4;
+  text-shadow: 0 0 2px var(--shop);
+}
+
+.dark .join-input::placeholder {
+  color: var(--blue);
+}
+
+.dark .join-btn {
+  background-color: var(--btn);
+}
+
 
 /* heder end  */
 
