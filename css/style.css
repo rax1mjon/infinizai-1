@@ -262,7 +262,21 @@ nav {
   box-shadow: 0 0 20px var(--gold)
 }
 
-.dark .articles-
+.dark .articles-cards__card {
+  background-color: var(--shop);
+}
+
+.dark .articles-cards__card:hover {
+  box-shadow: 0 0  30px var(--gold);
+}
+
+.dark .articles-card__text {
+  color: var(--join);
+}
+
+.dark .articles-card__title {
+  color: var(--join);
+}
 
 
 /* heder end  */
@@ -648,7 +662,7 @@ nav {
 .articles-about__bigcard {
   max-width: 648px;
   border-radius: 40px;
-  padding: 15px;
+  padding: 30px;
   transition: 0.4s;
 }
 
@@ -686,7 +700,7 @@ nav {
 .articles-cards__card {
   max-width: 306px;
   border-radius: 40px;
-  padding: 15px;
+  padding: 30px;
   transition: 0.4s;
 
 }
