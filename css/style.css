@@ -137,7 +137,7 @@ nav {
 }
 
 .dark .hamburger {
-  color: var(--join);
+  color: var(--blue);
 }
 
 .dark .nav-btn img:hover {
