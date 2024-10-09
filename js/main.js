@@ -33,23 +33,7 @@ function shrink() {
 
 
 
-// let backtop = document.getElementById("backtop-id");
 
-// function shrink() {
-//   // if (scrollY > 200) {
-//   //   backtop.classList.add("backtop")
-//   // }
-//   // else {
-//   //   backtop.classList.remove("backtop")
-//   // }
-
-// }
-
-// let bactop = document.getElementById("backtop-id") ;
-
-// function topFunction() {
-//   window.scrollTo(0, 0);
-// }
 
 
 // dark-mode
@@ -63,3 +47,21 @@ modeBtn.addEventListener("click", function () {
   }
   document.body.classList.toggle("dark");
 });
+
+// back top
+window.addEventListener("scroll", function () {
+  toggleBacktop();
+});
+
+let backtop = document.getElementById("backtop");
+
+function toggleBacktop() {
+  if (
+    document.body.scrollTop > 500 ||
+    document.documentElement.scrollTop > 500
+  ) {
+    backtop.classList.add('backtop-show')
+  } else {
+    backtop.classList.remove('backtop-show')
+  }
+}

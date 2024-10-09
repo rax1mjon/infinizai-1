@@ -1,0 +1,199 @@
+:root {
+    --white: #fff;
+    --gold: #fac422;
+    --black: #000000;
+    --blue: #57b8ff;
+    --shadow: #999;
+    --goldbold: #fdd04a;
+    --sponsor: #222730;
+    --shop: #dfdfdfcc;
+    --card: #ffffff26;
+    --join: #141820;
+    --jtext: #555;
+    --btn: #fd1515;
+}
+
+.dark header {
+    background-image: linear-gradient(to right,
+            var(--blue) 50%,
+            var(--black) 50%);
+}
+
+.dark .navbar-shrink {
+    background: var(--join);
+}
+
+.dark .hamburger {
+    color: var(--blue);
+}
+
+.dark .nav-btn img:hover {
+    box-shadow: 0 0 30px var(--gold);
+}
+
+.dark #hero {
+    background-image: linear-gradient(to right,
+            var(--blue) 50%,
+            var(--black) 50%);
+}
+
+.dark .hero-main__future {
+    color: var(--gold);
+    text-shadow: 0 0 2px var(--join);
+}
+
+.dark .hero-main__title {
+    color: var(--sponsor);
+}
+
+.dark .hero-main__text {
+    color: var(--sponsor);
+}
+
+.dark .hero-button:hover {
+    background-color: var(--goldbold);
+}
+
+.dark #sponsar {
+    background-color: var(--card);
+}
+
+.dark .sponsar-title {
+    color: var(--goldbold);
+    text-shadow: 0 0 2px var(--jtext);
+}
+
+.dark .sponsar-text {
+    color: var(--goldbold);
+    text-shadow: 0 0 2px var(--blue);
+}
+
+.dark .sponsar-ais img {
+    border-radius: 25px;
+    box-shadow: 0 0 50px var(--goldbold), inset 15px 15px 0 var(--gold), inset -15px -15px 0 var(--gold);
+}
+
+.dark .shop-main__title {
+    color: var(--btn);
+}
+
+.dark .shop-main__text {
+    color: var(--btn);
+}
+
+.dark .shop-card {
+    background-color: var(--shop);
+    box-shadow: 0 0 20px var(--btn);
+}
+
+.dark .shop-card * {
+    color: var(--btn);
+}
+
+.dark #newera {
+    background-color: var(--shop);
+}
+
+.dark .newera-main__text {
+    color: var(--card);
+    text-shadow: 0 0 1px var(--btn);
+}
+
+.dark .newera-main__title {
+    color: var(--card);
+    text-shadow: 0 0 1px var(--btn);
+}
+
+.dark .newera-main .hero-button {
+    color: var(--card);
+    text-shadow: 0 0 1px var(--btn);
+}
+
+.dark .games-title {
+    color: var(--gold);
+}
+
+.dark .games-back svg {
+    fill: var(--gold);
+}
+
+.dark #articles {
+    background-color: var(--jtext);
+}
+
+.dark .articles-main__text {
+    color: var(--gold);
+}
+
+.dark .articles .hero-button {
+    color: var(--gold);
+}
+
+.dark .articles .hero-button:hover {
+    background-color: var(--blue);
+}
+
+.dark .articles-about__bigcard {
+    background-color: var(--shop);
+}
+
+.dark .articles-bigcard__text {
+    color: var(--join);
+}
+
+.dark .articles-bigcard__title {
+    color: var(--join);
+}
+
+.dark .articles-about__bigcard:hover {
+    box-shadow: 0 0 20px var(--gold)
+}
+
+.dark .articles-cards__card {
+    background-color: var(--shop);
+}
+
+.dark .articles-cards__card:hover {
+    box-shadow: 0 0 30px var(--gold);
+}
+
+.dark .articles-card__text {
+    color: var(--join);
+}
+
+.dark .articles-card__title {
+    color: var(--join);
+}
+
+.dark .join-title {
+    color: var(--btn);
+}
+
+.dark .join-text {
+    color: var(--btn);
+    opacity: 0.4;
+    text-shadow: 0 0 2px var(--shop);
+}
+
+.dark .join-input::placeholder {
+    color: var(--blue);
+}
+
+.dark .join-btn {
+    background-color: var(--btn);
+}
+
+.dark #backtop {
+    background-color: var(--jtext);
+    color: var(--btn);
+}
+
+@media (max-width: 950px) {
+    .dark .hero-main__title {
+        color: var(--shadow);
+    }
+
+    .dark .hero-main__text {
+    color: var(--shadow);
+}
+}

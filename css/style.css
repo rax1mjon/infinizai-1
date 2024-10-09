@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("./dark.css");
 
 * {
   margin: 0;
@@ -9,6 +10,7 @@
 html,
 body {
   font-family: "Orbitron", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -18,20 +20,7 @@ body {
   padding: 0 20px;
 }
 
-:root {
-  --white: #fff;
-  --gold: #fac422;
-  --black: #000000;
-  --blue: #57b8ff;
-  --shadow: #999;
-  --goldbold: #fdd04a;
-  --sponsor: #222730;
-  --shop: #dfdfdfcc;
-  --card: #ffffff26;
-  --join: #141820;
-  --jtext: #555;
-  --btn: #fd1515;
-}
+
 
 ul {
   list-style-type: none;
@@ -83,6 +72,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 60px;
+  margin-bottom: 15px;
 }
 
 .nav-menu__link {
@@ -119,6 +109,7 @@ nav {
   font-weight: 400;
   line-height: 30px;
   transition: 0.2s;
+  min-width: 173px;
 }
 
 .nav-btn__link:hover {
@@ -126,182 +117,13 @@ nav {
   color: var(--gold);
 }
 
-.dark header {
-  background-image: linear-gradient(to right,
-      var(--blue) 50%,
-      var(--black) 50%);
-}
-
-.dark .navbar-shrink {
-  background: var(--join);
-}
-
-.dark .hamburger {
-  color: var(--blue);
-}
-
-.dark .nav-btn img:hover {
-  box-shadow: 0 0 30px var(--gold);
-}
-
-.dark .hero {
-  background-image: linear-gradient(to right,
-      var(--blue) 50%,
-      var(--black) 50%);
-}
-
-.dark .hero-main__future {
-  color: var(--gold);
-  text-shadow: 0 0 2px var(--join);
-}
-
-.dark .hero-main__title {
-  color: var(--sponsor);
-}
-
-.dark .hero-main__text {
-  color: var(--sponsor);
-}
-
-.dark .hero-button:hover {
-  background-color: var(--goldbold);
-}
-
-.dark .sponsar {
-  background-color: var(--card);
-}
-
-.dark .sponsar-title {
-  color: var(--goldbold);
-  text-shadow: 0 0 2px var(--jtext);
-}
-
-.dark .sponsar-text {
-  color: var(--goldbold);
-  text-shadow: 0 0 2px var(--blue);
-}
-
-.dark .sponsar-ais img {
-  border-radius: 25px;
-  box-shadow: 0 0 50px var(--goldbold), inset 15px 15px 0 var(--gold), inset -15px -15px 0 var(--gold);
-}
-
-.dark .shop-main__title {
-  color: var(--btn);
-}
-
-.dark .shop-main__text {
-  color: var(--btn);
-}
-
-.dark .shop-card {
-  background-color: var(--shop);
-  box-shadow: 0 0 20px var(--btn);
-}
-
-.dark .shop-card * {
-    color: var(--btn);
-}
-
-.dark .newera {
-  background-color: var(--shop);
-}
-
-.dark .newera-main__text {
-  color: var(--card);
-  text-shadow: 0 0 1px var(--btn);
-}
-
-.dark .newera-main__title {
-    color: var(--card);
-      text-shadow: 0 0 1px var(--btn);
-}
-
-.dark .newera-main .hero-button {
-  color: var(--card);
-    text-shadow: 0 0 1px var(--btn);
-}
-
-.dark .games-title {
-  color: var(--gold);
-}
-
-.dark .games-back svg {
-  fill: var(--gold);
-}
-
-.dark .articles {
-  background-color: var(--jtext);
-}
-
-.dark .articles-main__text {
-  color: var(--gold);
-}
-
-.dark .articles .hero-button {
-  color: var(--gold);
-}
-
-.dark .articles .hero-button:hover {
-  background-color: var(--blue);
-}
-
-.dark .articles-about__bigcard {
-  background-color: var(--shop);
-}
-
-.dark .articles-bigcard__text {
-  color: var(--join);
-}
-
-.dark .articles-bigcard__title {
-  color: var(--join);
-}
-
-.dark .articles-about__bigcard:hover {
-  box-shadow: 0 0 20px var(--gold)
-}
-
-.dark .articles-cards__card {
-  background-color: var(--shop);
-}
-
-.dark .articles-cards__card:hover {
-  box-shadow: 0 0  30px var(--gold);
-}
-
-.dark .articles-card__text {
-  color: var(--join);
-}
-
-.dark .articles-card__title {
-  color: var(--join);
-}
-
-.dark .join-title {
-  color: var(--btn);
-}
-
-.dark .join-text {
-  color: var(--btn);
-  opacity: 0.4;
-  text-shadow: 0 0 2px var(--shop);
-}
-
-.dark .join-input::placeholder {
-  color: var(--blue);
-}
-
-.dark .join-btn {
-  background-color: var(--btn);
-}
 
 
 /* heder end  */
 
 /* hero start */
 
-.hero {
+#hero {
   padding: 190px 0 120px 0;
   background-image: linear-gradient(to right,
       var(--black) 50%,
@@ -401,7 +223,7 @@ nav {
 
 /* sponsar start */
 
-.sponsar {
+#sponsar {
   padding: 130px 0;
   background-color: var(--goldbold);
 }
@@ -459,7 +281,7 @@ nav {
 
 /* shop start */
 
-.shop {
+#shop {
   padding: 130px 0;
   background: url("../images/shop_back.png") no-repeat;
   background-size: cover;
@@ -543,7 +365,7 @@ nav {
 
 /* games start */
 
-.games {
+#games {
   background-color: var(--shadow);
 }
 
@@ -564,8 +386,8 @@ nav {
 }
 
 .games-back svg {
-  fill : var(--white);
-   
+  fill: var(--white);
+
 }
 
 .games-back:nth-child(1) {
@@ -596,7 +418,7 @@ nav {
 
 /* newera sart */
 
-.newera {
+#newera {
   background-color: var(--black);
   padding: 70px 0;
 }
@@ -644,7 +466,7 @@ nav {
 /* articles start */
 
 
-.articles {
+#articles {
   padding: 75px 0 87px;
   background-color: var(--black);
 }
@@ -652,6 +474,7 @@ nav {
 .atricles-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 64px;
 }
 
@@ -659,6 +482,7 @@ nav {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  width: 100%;
 }
 
 .articles-main__texts {
@@ -711,6 +535,7 @@ nav {
 .articles-small__cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   row-gap: 40px;
   column-gap: 24px;
 }
@@ -750,7 +575,7 @@ nav {
 
 /* join start */
 
-.join {
+#join {
   background: url("../images/join_back.png") no-repeat;
   background-size: cover;
   padding: 130px 0;
@@ -839,18 +664,19 @@ nav {
 }
 
 
-#backtop-id {
+#backtop {
   position: fixed;
   bottom: 40px;
   right: 40px;
   display: none;
-  padding: 10px;
-  border-radius: 45px;
-  background-color: var(--shadow);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--blue);
   box-shadow: 0 0 40px var(--btn);
+  border: none;
 }
 
-.backtop {
+.backtop-show {
   display: inline-block !important;
 }
 
@@ -859,7 +685,7 @@ nav {
 
 @media (max-width: 1400px) {
   .hero-main * {
-    width: 70%;
+    max-width: 660px;
   }
 
   .sponsar-ais {
@@ -902,15 +728,20 @@ nav {
 }
 
 @media (max-width: 950px) {
-  .hero {
-    background-image: none !important;
-    background-color: var(--black) !important;
+
+  #hero {
+    background: var(--black) !important;
   }
+
 
   .hero-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+  }
+
+  .hero-main__text {
+    text-align: center;
   }
 
   .hero-main {
@@ -922,7 +753,7 @@ nav {
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 970px) {
 
 
   nav {
@@ -952,8 +783,6 @@ nav {
   .activeBtn {
     display: flex;
   }
-
-
 }
 
 
@@ -974,9 +803,38 @@ nav {
 
 }
 
+
+
 @media (max-width: 810px) {
   .games-back:nth-child(1) {
     display: none;
+  }
+
+  .hero-main__title {
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 76px;
+  }
+
+  .hero-main__text {
+    max-width: 70%;
+  }
+
+  .join-title {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+
+}
+
+
+
+@media (max-width: 740px) {
+  .newera-main__title {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
   }
 }
 
@@ -997,6 +855,52 @@ nav {
 
 }
 
+@media (max-width: 655px) {
+  .shop-main__title {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 610px) {
+  .hero-main__title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 56px;
+  }
+
+  .articles-bigcard__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+
+  .articles-bigcard__text {
+    margin: 34px 28px;
+  }
+}
+
+@media (max-width:590px) and (min-width:420px) {
+  .articles-main__text {
+    font-size: 45px;
+    line-height: 64px;
+  }
+}
+
+@media (max-width:420px) {
+  .articles-main__text {
+    font-size: 35px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 570px) {
+  .join-title span:after {
+    display: none;
+  }
+}
+
 @media (max-width: 550px) {
   .nav-menu {
     width: 100%;
@@ -1007,8 +911,28 @@ nav {
 
   .hero-main__title {
     font-size: 50px;
-    font-weight: 400;
     line-height: 70px;
+  }
+
+}
+
+@media (max-width: 540px) {
+  .shop-card__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .shop-card__text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 490px) {
+  .hero-main__title {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 60px;
   }
 
 }
@@ -1033,7 +957,23 @@ nav {
 
 }
 
+@media (max-width: 450px) {
+  .hero-main__title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+  }
+}
+
 @media (max-width: 440px) {
+
+  .sponsar-title {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+  }
+
   .sponsar-title::before {
     display: none;
   }
@@ -1053,12 +993,6 @@ nav {
     gap: 20px;
   }
 
-  .hero-main__title {
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 65px;
-  }
-
   .shop-card {
     padding-left: 30px;
   }
@@ -1066,4 +1000,32 @@ nav {
   .shop-card::before {
     display: none;
   }
+
+  .newera-main__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
+
+@media (max-width: 335px) {
+  .games-title {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .articles-bigcard__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 330px) {
+  .articles-card__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
+/* smooth qoshish  */
+/* backtop qoshish */
