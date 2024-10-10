@@ -187,13 +187,3 @@
     background-color: var(--jtext);
     color: var(--btn);
 }
-
-@media (max-width: 950px) {
-    .dark .hero-main__title {
-        color: var(--shadow);
-    }
-
-    .dark .hero-main__text {
-    color: var(--shadow);
-}
-}
